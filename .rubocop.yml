@@ -1,0 +1,42 @@
+require: rubocop-rspec
+
+AllCops:
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'bin/**/*'
+    - 'vendor/**/*'
+    - 'spec/factories/**/*'
+
+  TargetRubyVersion: 2.3
+
+Rails:
+  Enabled: true
+
+Style/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Metrics/LineLength:
+  Max: 120
+
+Style/Documentation:
+  Enabled: False
+
+Style/SignalException:
+  Enabled: False
+
+Style/FrozenStringLiteralComment:
+  Enabled: False
+
+Style/EachWithObject:
+  Enabled: False
+
+RSpec/ExampleLength:
+  Enabled: False
+
+RSpec/MultipleExpectations:
+  Enabled: False
+
+RSpec/BlockLength:
+  Enabled: False
+
