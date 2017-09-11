@@ -7,8 +7,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'puma', '~> 3.0'
-gem 'rails', '~> 5.1.0'
+gem 'rails', '~> 5.1.2'
+gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -47,7 +47,8 @@ gem 'sidekiq'
 gem 'smarter_csv'
 gem 'wicked'
 gem 'workflow'
-gem 'rails-rename', '~> 1.0.0' # rails g rename NewAppName
+gem 'rename' # rails g rename:into New-Name
+gem 'redis', '~> 3.0'
 
 group :development, :test do
   gem 'byebug', platform: :mri # Call 'byebug' anywhere in the code to stop execution and get a debugger console

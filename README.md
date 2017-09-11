@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+My application template with some default functionality like session management
+and user CRUD.
 
-Things you may want to cover:
 
-* Ruby version
+To rename the project appropriately do:
 
-* System dependencies
+- rails g rename:into RailsApp
+- find ./ -type f -exec sed -i -e 's/karl_app/rails_app/g' {} \;
 
-* Configuration
+You'll probably have to remove some untracked files, to do that run:
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+git clean -fd
